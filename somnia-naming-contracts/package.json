@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts --network somnia-testnet",
+    "deploy-blackjack": "npx hardhat run scripts/deploy-blackjack.ts --network somnia-testnet",
+    "compile": "npx hardhat compile"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^4.0.0",
+    "@types/node": "^24.0.12",
+    "hardhat": "^2.25.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.1.0"
+  }
+}
