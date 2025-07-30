@@ -3,7 +3,8 @@
     "test": "npx hardhat test",
     "deploy": "npx hardhat run scripts/deploy.ts --network somnia-testnet",
     "deploy-blackjack": "npx hardhat run scripts/deploy-blackjack.ts --network somnia-testnet",
-    "compile": "npx hardhat compile"
+    "compile": "npx hardhat compile",
+    "verify": "npx hardhat verify --network somnia-testnet"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^4.0.0",

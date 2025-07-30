@@ -135,6 +135,7 @@ contract SomniaBlackjack {
         if (game.sum == 21) {
             game.hasBlackjack = true;
             _rewardPlayer(msg.sender, game.betAmount);
+            game.isAlive = false;
         } else if (game.sum > 21) {
             game.isAlive = false;
             _grantDailyChips(msg.sender, CHIP_REWARD);
