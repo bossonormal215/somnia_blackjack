@@ -1,5 +1,7 @@
 node_modules
 .env
+.env.local
+.env.development.local
 
 # Hardhat files
 /cache
@@ -8,6 +10,10 @@ node_modules
 # TypeChain files
 /typechain
 /typechain-types
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+.yarn.lock
 
 # solidity-coverage files
 /coverage
