@@ -54,7 +54,7 @@ function getGameMessage(gameState: any, status: string) {
   if (gameState[3]) return "Blackjack! You win!";
   if (!gameState[2]) {
     if (gameState[1] > 21) return "Bust! You lost.";
-    return "Game over.";
+    // return "Game over.";
   }
   return status;
 }
@@ -275,6 +275,7 @@ export default function Home() {
 
   // Draw Card with polling
   const handleDrawCardWithPolling = async () => {
+    setStatus("Drawing card...");
     setIsDrawing(true);
     setError(null);
     if (!account) {
