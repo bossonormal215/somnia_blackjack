@@ -35,9 +35,9 @@ import { Providers } from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Somnia Name Service",
+  title: "Fun BlackJack Game on Somnia",
   description:
-    "Decentralized naming service on Somnia - Where dreams meet the blockchain",
+    "Join the ultimate fun BlackJack game on Somnia - Where dreams meet the blockchain",
 };
 
 export default function RootLayout({
